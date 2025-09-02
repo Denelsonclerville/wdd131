@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 - Dynamic Web Fundamentals - Denelson Clerville</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Denelson Clerville's course homepage.">
+  <meta name="author" content="Denelson Clerville">
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Denelson Clerville</span></h1>
+    <nav>
+      <a href="https://www.linkedin.com/in/dnelsonclerville/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/19?lang=fr&id=p7#p7" hreflang="fr" target="_blank" rel="noopener noreferrer">Scripture (in French)</a>
+      <a href="#" aria-current="page">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          Hello, my name is Denelson Clerville, and I hail from the vibrant city of Cap-Haïtien, Haiti. 
+          My passion for coding knows no bounds, and I am eagerly on the path to becoming a professional full-stack developer. 
+          With an insatiable love for technology, I am constantly driven to expand my knowledge and skills in the ever-evolving world of software development. My journey into the realm of technology is
+          complemented by a solid background in business administration and
+          social media marketing.
+        </p>
+        <img src="images/profile.png" alt="Profile picture of Denelson Clerville" class="profile-pic">
+      </div>
+
+      <h3>Cap-Haïtien, Haiti</h3>
+      <hr>
+
+      <div class="flag-info">
+        <figure class="my-city">
+          <img src="images/haiti.jpeg" alt="The national flag of Haiti featuring the coat of arms on a white panel">
+          <figcaption>Official Flag of Haiti</figcaption>
+        </figure>
+        <p>
+          Haiti is a Caribbean country known for its rich culture and history.
+          Cap-Haïtien is a city located on the north coast and is famous for its colonial architecture and the Citadelle Laferrière.
+        </p>
+      </div>
+    </section>
+
+    <section class="card resources">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+        <li><a href="https://placeholder.com/" target="_blank" rel="noopener noreferrer">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Denelson Clerville | Haiti</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>
