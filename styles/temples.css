@@ -1,6 +1,4 @@
-/* ========== temples.css ========== */
-
-/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -40,10 +38,9 @@ header {
 }
 
 .header-container {
-  position: relative; /* Pou bouton absolute ka pran referans isit la */
+  position: relative;
 }
 
-/* Pozisyon bouton toggle la (X / 3 ba yo) */
 #menu-toggle {
   position: absolute;
   top: 0.3rem;    
@@ -100,8 +97,6 @@ nav li a:hover {
   z-index: 999;
 }
 
-
-/* MAIN */
 main {
   padding: 1rem;
   text-align: center;
@@ -111,7 +106,6 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-/* GALLERY */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;

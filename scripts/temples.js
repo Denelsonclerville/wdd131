@@ -5,22 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuToggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('open');
-
-    // Swiv si meni louvri
     if (isOpen) {
-      menuToggle.textContent = '✖'; // Chanje ikon
+      menuToggle.textContent = '✖'; 
       menuToggle.setAttribute('aria-expanded', 'true');
-      logo.style.opacity = '0';     // Fè logo a disparèt (men li toujou la)
-      logo.style.pointerEvents = 'none'; // Pa pran klik
+      logo.style.opacity = '0'; 
+      logo.style.pointerEvents = 'none';
     } else {
-      menuToggle.textContent = '☰'; // Retounen ikon
+      menuToggle.textContent = '☰'; 
       menuToggle.setAttribute('aria-expanded', 'false');
-      logo.style.opacity = '1';     // Retounen logo a
+      logo.style.opacity = '1';
       logo.style.pointerEvents = 'auto';
     }
   });
 
-  // Footer info
   document.getElementById('currentyear').textContent = new Date().getFullYear();
   document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 });

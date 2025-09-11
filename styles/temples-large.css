@@ -1,8 +1,5 @@
-/* ========== temples-large.css ========== */
 
 @media screen and (min-width: 768px) {
-
-  /* HEADER & NAVIGATION */
   .header-container {
     flex-direction: row;
     justify-content: space-between;
@@ -29,7 +26,6 @@
     margin: 2rem 0 0.5rem 0;
   }
 
-  /* GALLERY GRID */
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
