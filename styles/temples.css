@@ -1,0 +1,149 @@
+/* ========== temples.css ========== */
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #3b0057;
+  color: white;
+  padding-left: 10px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0; 
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#logo {
+  transition: opacity 0.3s ease;
+}
+
+.header-container {
+  position: relative; /* Pou bouton absolute ka pran referans isit la */
+}
+
+/* Pozisyon bouton toggle la (X / 3 ba yo) */
+#menu-toggle {
+  position: absolute;
+  top: 0.3rem;    
+  right: 0;      
+  color: white;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+#main-nav {
+  display: none;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem;
+  font-size: 20px;
+}
+
+#main-nav.open {
+  display: flex;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+nav li a:hover {
+  background-color: #5e2b91;
+  border-radius: 4px;
+}
+
+#close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+/* MAIN */
+main {
+  padding: 1rem;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #3b0057;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
