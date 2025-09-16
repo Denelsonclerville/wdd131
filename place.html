@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haiti — Country Facts & Weather</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Haiti</h1>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Haiti hero section">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 768px)" />
+        <source srcset="images/hero-small.webp" media="(min-width: 480px)" />
+        <img src="images/hero1.webp" alt="Haiti landscape with mountains and sky" class="hero-img" loading="lazy" />
+      </picture>
+
+      <div class="data-box" aria-labelledby="data-title">
+        <h2 id="data-title">Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 27,750 km²</li>
+          <li><strong>Population:</strong> 11,743,017</li>
+          <li><strong>Capital:</strong> Port-au-Prince</li>
+          <li><strong>Languages:</strong> Haitian Creole, French</li>
+          <li><strong>Currency:</strong> Haitian Gourde (HTG)</li>
+          <li><strong>Time Zone:</strong> UTC-5</li>
+          <li><strong>Calling Code:</strong> +509</li>
+          <li><strong>Internet TLD:</strong> .ht</li>
+        </ul>
+      </div>
+
+      <div class="weather-box" aria-labelledby="weather-title">
+        <div id="weather-title">
+          <h2>Weather</h2>
+          <img class="site-icon" src="images/cloud_sky_summer_sun_sunshine_icon.svg" alt="Weather icon" width="44" height="44" onerror="this.style.display='none'" />
+        </div>
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temp" data-value="29">29</span> °C</li>
+          <li><strong>Conditions:</strong> Mostly Sunny</li>
+          <li><strong>Wind Speed:</strong> <span id="wind" data-value="10">10</span> km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="chill">N/A</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> | Denelson Clerville | Haiti</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
