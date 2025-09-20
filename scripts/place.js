@@ -14,13 +14,10 @@
     tempEl.style.padding = '2px 6px';
     tempEl.style.borderRadius = '6px';
     if (v >= 30) {
-      tempEl.style.background = 'rgba(193,18,31,0.12)';
       tempEl.style.color = '#b71c1c';
     } else if (v >= 20) {
-      tempEl.style.background = 'rgba(42,157,143,0.08)';
       tempEl.style.color = '#1b6a5d';
     } else {
-      tempEl.style.background = 'rgba(41,105,176,0.08)';
       tempEl.style.color = '#1b4f7a';
     }
   }
