@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #efefef;
+  padding-left: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b0057;
+  margin: 0;
+}
+
+#logo {
+  transition: opacity 0.3s ease;
+}
+
+#menu-toggle {
+  display: block;
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem; 
+  border: none;
+  font-size: 2rem;
+  color: black;
+  border-radius: 1.5px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  z-index: 1001;
+}
+
+#main-nav {
+  display: none;
+}
+
+#main-nav.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  height: 80vh;
+  background-color: #efefef;
+  z-index: 1000;
+  padding-top: 3rem;
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#main-nav li {
+  width: 100%;
+}
+
+#main-nav a {
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+#main-nav a:hover,
+#main-nav a:focus {
+  background-color: #fff;
+  color: #3b0057;
+}
+
+#close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.temple-info-container {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.temple-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(60, 0, 87, 0.10);
+  padding: 1.5rem 1rem;
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+h2{
+  text-align: center;
+}
+
+.temple-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2d003b;
+  margin: 0 0 1rem  0;
+}
+
+.temple-info {
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.value {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.label  {
+  color: #5e2b91;
+  text-transform: uppercase;
+  font-size: 0.98em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0 8px 0 0;
+}
+ 
+.temple-info .value {
+  color: #222;
+  font-weight: 400;
+}
+
+.temple-img {
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(60, 0, 87, 0.18);
+  object-fit: cover;
+}
+
+.gallery {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  background: #efefef;
+  padding: 1.5rem 0;
+  border-radius: 8px;
+  max-width: 1200px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+footer {
+  background-color: #efefef;
+  color: #222;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #bbb;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b0057;
+  margin: 0;
+}

@@ -1,0 +1,73 @@
+@media (min-width: 1024px) {
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex !important;
+    justify-content: space-around;
+    background: none;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 ;
+    margin: 0;
+  }
+
+  #main-nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0 3rem;
+  }
+
+  #main-nav a {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background: none;
+    color: #3b0057;
+    border-radius: 4px;
+  }
+
+  #main-nav a:hover,
+  #main-nav a:focus {
+    background: #5e2b91;
+    color: #fff;
+  }
+
+  .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b0057;
+  margin: 0;
+   }
+
+   .temple-card {
+    height: 70vh;
+   }
+
+   .temple-img {
+    width: 100%;
+    height: 300vh;
+   }
+
+   .temple-info {
+    text-align: start;
+    margin-left: 17px;
+   }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
