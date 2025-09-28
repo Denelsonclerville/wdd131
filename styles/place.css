@@ -1,8 +1,8 @@
 :root {
   --brand-blue: #00209F;
   --brand-red: #EF3340;
-  --panel-bg: rgba(255, 255, 255, 0.92); /* blan ak transparans */
-  --text-dark: #000000; /* nwa pou tèks klè */
+  --panel-bg: rgba(255, 255, 255, 0.92); 
+  --text-dark: #000000; 
   --panel-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   --max-panel-width: 300px;
 }
@@ -13,48 +13,21 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text-dark);
   line-height: 1.5;
 }
 
-/* =================================================== Header =================================================== */
-
-.site-header {
+.site-title {
+  font-size: 3rem;
+  font-weight: 700;
   background: var(--brand-blue);
   color: #fff;
   text-align: center;
   padding: 2rem 1.25rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  z-index: 50;
 }
 
-.header-inner {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.site-title {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-.site-icon {
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
-}
-
-/* =================================================== Hero Section =================================================== */
 
 .hero {
   position: relative;
@@ -72,8 +45,6 @@ body {
   display: block;
   margin-top: 2px;
 }
-
-/* =================================================== Data Panel =================================================== */
 
 .data-box {
   position: absolute;
@@ -119,8 +90,6 @@ body {
   padding-right: 12px;
 }
 
-/* =================================================== Weather Panel =================================================== */
-
 .weather-box {
   position: absolute;
   max-width: 40%;
@@ -135,11 +104,11 @@ body {
 #weather-title {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 55%;
   background-color: var(--brand-red);
-  color: var(--brand-blue);
-  gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  color: #fff;
+  gap: 0.3rem;
+  padding: 0.5rem 0.90rem;
   border-radius: 6px;
   position: absolute;
   top: 5px;
@@ -152,8 +121,8 @@ body {
 }
 
 #weather-title img {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 35px;
 }
 
 .weather-box ul {
@@ -175,17 +144,13 @@ body {
   padding-right: 12px;
 }
 
-/* =================================================== Footer =================================================== */
-
-.site-footer {
-  background: var(--brand-red);
+footer {
+  background: var(--brand-blue);
   color: #fff;
   text-align: center;
   padding: 0.9rem;
   font-size: 0.95rem;
 }
-
-/* Responsive styles remain the same, but updating colors inside them */
 
 @media (max-width: 768px) {
   .hero {

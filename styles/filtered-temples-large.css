@@ -57,6 +57,10 @@
     height: 70vh;
    }
 
+   .temple-img {
+    width: 100%;
+    height: 100px;
+   }
 
    .temple-info {
     text-align: start;

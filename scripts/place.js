@@ -1,4 +1,3 @@
-// place.js - small utility to fill year + last modified and color temp
 (function () {
   // year + lastModified
   var y = document.getElementById('year');
@@ -22,7 +21,6 @@
     }
   }
 
-  // Bonus: small accessibility improvement - focus outline for keyboard users
   document.body.addEventListener('keydown', function (e) {
     if (e.key === 'Tab') document.documentElement.classList.add('show-focus');
   });
