@@ -1,6 +1,3 @@
-// filtered.js
-// Temple card creation and other functions migrated from filtered-temples.js
-
 function createTempleCard(temple) {
   const card = document.createElement('section');
   let name = document.createElement('h3');
@@ -26,7 +23,6 @@ function createTempleCard(temple) {
   return card;
 }
 
-// Example: filter temples by year
 function filterTemplesByYear(temples, year, before = true) {
   return temples.filter(t => {
     const match = t.dedicated.match(/(\d{4})/);
@@ -35,10 +31,6 @@ function filterTemplesByYear(temples, year, before = true) {
   });
 }
 
-// Example: filter temples by area
 function filterTemplesByArea(temples, min, max) {
   return temples.filter(t => t.area > min && t.area < max);
 }
-
-// Export functions if using modules
-// export { createTempleCard, filterTemplesByYear, filterTemplesByArea };
