@@ -1,4 +1,3 @@
-// Example product array
 const products = [
   { id: 'p1', name: 'Product One' },
   { id: 'p2', name: 'Product Two' },
@@ -6,7 +5,6 @@ const products = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-  // --- Populate the product select ---
   const productSelect = document.getElementById('product');
   if (productSelect) {
     products.forEach(product => {
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Review counter ---
   let reviewCount = localStorage.getItem('reviewCount');
   reviewCount = reviewCount ? parseInt(reviewCount) : 0;
   reviewCount++;
@@ -28,13 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     countDisplay.textContent = `Reviews completed: ${reviewCount}`;
   }
 
-  // --- Current year ---
   const yearSpan = document.getElementById('currentyear');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // --- Last modified date ---
   const lastModPara = document.getElementById('lastModified');
   if (lastModPara) {
     lastModPara.textContent = `Last Modified: ${document.lastModified}`;
