@@ -1,29 +1,42 @@
-const yearSpan = document.getElementById('currentyear');
-if (yearSpan) {
-  const currentYear = new Date().getFullYear();
-  yearSpan.textContent = currentYear;
-}
+// Example product array
+const products = [
+  { id: 'p1', name: 'Product One' },
+  { id: 'p2', name: 'Product Two' },
+  { id: 'p3', name: 'Product Three' }
+];
 
-const lastModPara = document.getElementById('lastModified');
-if (lastModPara) {
-  lastModPara.textContent = `Last Modified: ${document.lastModified}`;
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const products = [
-    "SuperWidget 3000",
-    "MegaGadget Pro",
-    "UltraTool X",
-    "SmartDevice Mini",
-    "EcoGear Plus"
-  ];
-  const select = document.getElementById("product");
-  if (select) {
+document.addEventListener('DOMContentLoaded', () => {
+  // --- Populate the product select ---
+  const productSelect = document.getElementById('product');
+  if (productSelect) {
     products.forEach(product => {
-      const option = document.createElement("option");
-      option.value = product;
-      option.textContent = product;
-      select.appendChild(option);
+      const option = document.createElement('option');
+      option.value = product.id;
+      option.textContent = product.name;
+      productSelect.appendChild(option);
     });
+  }
+
+  // --- Review counter ---
+  let reviewCount = localStorage.getItem('reviewCount');
+  reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+  reviewCount++;
+  localStorage.setItem('reviewCount', reviewCount);
+
+  const countDisplay = document.getElementById('review-count');
+  if (countDisplay) {
+    countDisplay.textContent = `Reviews completed: ${reviewCount}`;
+  }
+
+  // --- Current year ---
+  const yearSpan = document.getElementById('currentyear');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  // --- Last modified date ---
+  const lastModPara = document.getElementById('lastModified');
+  if (lastModPara) {
+    lastModPara.textContent = `Last Modified: ${document.lastModified}`;
   }
 });

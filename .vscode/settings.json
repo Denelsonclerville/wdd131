@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.fullReload": true
+    "liveServer.settings.fullReload": true,
+    "github.copilot.advanced": {
+        
+    }
 }
