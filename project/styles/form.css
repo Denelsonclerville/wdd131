@@ -53,46 +53,44 @@ textarea {
 }
 
 .features-checkboxes input[type="checkbox"] {
-  width: 20px;   /* Fè ti bwat checkbox la pi gwo */
-  height: 20px;  /* Fè li kare */
-  accent-color: #3a003a; /* Chanje koulè lè li checked (opsyonèl) */
+  width: 20px;  
+  height: 20px;  
+  accent-color: #3a003a; 
 }
 
 .rating {
   display: flex;
-  justify-content: flex-start; /* Mete yo sou liy gòch */
+  justify-content: flex-start;
   max-width: 300px;
 }
 
 .rating label {
   display: flex;
-  flex-direction: column; /* Etwal anlè, ti boul anba */
+  flex-direction: column;
   align-items: center;
   cursor: pointer;
   font-size: 1.5rem;
-  margin-right: 40px; /* Espas apre chak label */
+  margin-right: 40px; 
 }
 
 .rating label:last-child {
-  margin-right: 0; /* Pa ajoute espas apre dènye label la */
+  margin-right: 0; 
 }
 
 .rating input[type="radio"] {
-  margin-top: 5px; /* Ti boul anba etwal la */
+  margin-top: 5px; /
 }
 
 
+#confirmation {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  }
 
-    /* Confirmation message style */
-    #confirmation {
-      margin-top: 20px;
-      color: green;
-      font-weight: bold;
-    }
-
-    .form-buttons {
-      margin-top: 15px;
-    }
+  .form-buttons {
+  margin-top: 15px;
+   }
   
 
 textarea {
@@ -126,4 +124,32 @@ footer {
   background: #3a003a;
   color: white;
   margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;         
+    margin: 1rem auto; 
+    padding: 1rem;      
+  }
+
+  .rating {
+    max-width: 100%;    
+    flex-wrap: wrap;    
+  }
+
+  .rating label {
+    margin-right: 10px;  
+    font-size: 1.2rem;   
+  }
+
+  .features-checkboxes input[type="checkbox"] {
+    width: 18px;         
+    height: 18px;
+  }
+
+  input[type="submit"] {
+    font-size: 0.9rem;  
+    padding: 0.5rem;
+  }
 }
