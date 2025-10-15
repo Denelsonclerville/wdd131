@@ -1,45 +1,157 @@
-@media (max-width: 992px) {
-  .feature-grid, .product-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 0.5rem;
+
+  .home-hero {
+    height: 50vh;
+    padding: 1rem;
     text-align: center;
-  }
-
-  .nav-links {
+    align-items: center;
+    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: center;
   }
-
-  .feature-grid, .product-container {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
+  .home-hero h1 {
     font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .home-hero p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
-  .hero p {
+  /* Home intro */
+  .home-intro .intro-content {
+    text-align: center;
+    padding: 1rem;
+  }
+  .home-intro h1 {
+    font-size: 1.8rem;
+  }
+  .home-intro p {
     font-size: 1rem;
   }
 
-  .product-card h3 {
-    font-size: 1.1rem;
+  /* Sections titles & paragraphs */
+  section {
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  section p {
+    font-size: 1rem;
+    margin: 0 auto 1.2rem auto;
+    max-width: 600px;
+  }
+
+  /* Product gallery: 2 kolòn */
+  .product .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .product-card {
+    text-align: center;
+    padding: 1rem;
+  }
+  .product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+
+  /* See More button */
+  .see-more-btn {
+    display: block;
+    margin: 1rem auto;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+  }
+
+  /* Newsletter form */
+  #newsletterForm {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  #newsletterForm input[type="email"],
+  #newsletterForm .btn {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Footer */
+  footer.site-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 480px) {
-  header .cart {
-    position: static;
-    margin-top: 0.5rem;
+/* Small mobile: <= 600px */
+@media (max-width: 600px) {
+
+  /* Hero section pi piti */
+  .home-hero {
+    height: 45vh;
+    padding: 0.8rem;
+  }
+  .home-hero h1 {
+    font-size: 1.8rem;
+  }
+  .home-hero p {
+    font-size: 0.9rem;
   }
 
-  .btn {
+  /* Home intro */
+  .home-intro h1 {
+    font-size: 1.6rem;
+  }
+  .home-intro p {
+    font-size: 0.9rem;
+  }
+
+  /* Sections titles & paragraphs */
+  section h2 {
+    font-size: 1.3rem;
+  }
+  section p {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+
+  /* Product gallery: 1 kolòn */
+  .product .gallery {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .product-card img {
+    height: 140px;
+  }
+
+  /* See More button */
+  .see-more-btn {
+    font-size: 0.9rem;
     padding: 0.5rem 1rem;
+  }
+
+  /* Newsletter form */
+  #newsletterForm {
+    width: 90%;
+  }
+  #newsletterForm input[type="email"],
+  #newsletterForm .btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer.site-footer {
+    font-size: 0.85rem;
+    padding: 1.5rem 1rem;
   }
 }
